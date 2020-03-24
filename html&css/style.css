@@ -1,6 +1,6 @@
 *{
     font-family: circular;
-    /* color: whitesmoke; */
+    /* color:#698DB3; */
 }
 .main_div{
     height: 969px;
@@ -25,7 +25,7 @@
 }
 .searchbar{
     position: relative;
-    left: 60%;
+    left: 25%;
     margin-bottom: auto;
     margin-top: auto;
     height: 60px;
@@ -75,10 +75,12 @@
 }
 .artist_albumCol{
     background-color: #fcbcba;
+    background-image: linear-gradient(to right, #c4e4df ,#fcbcba );
 }
 .artistRow{
-    /* height: 30%; */
+    height: 30%;
     background-color: #c3e2dd;
+    background-image: linear-gradient(to right, #c4e4df ,#fcbcba );
     /* background-image: linear-gradient(#fcbcba, #c4e4df); */
 }
 .artist{
@@ -95,6 +97,7 @@ td{
 }
 .albumsRow{
     background-color: #FFCDC9;
+    background-image: linear-gradient(to right, #c4e4df ,#fcbcba );
     /* background-image: linear-gradient( #c4e4df,#fcbcba); */
     overflow-y: auto;
 }
@@ -107,7 +110,7 @@ td{
 }
 .others_artist_Col{
     background-color:#fcbcba ;
-    background-image: linear-gradient(#fcbcba, #c4e4df);
+    background-image: linear-gradient(to right, #c4e4df ,#fcbcba );
     border: #fcbcba;
     box-shadow: #fcbcba;
 }

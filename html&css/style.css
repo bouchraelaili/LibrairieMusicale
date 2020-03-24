@@ -1,0 +1,121 @@
+*{
+    font-family: circular;
+    /* color: whitesmoke; */
+}
+.main_div{
+    height: 969px;
+    overflow: hidden;
+}
+.bigRow{
+    height: 100%;
+    /* background-color: crimson; */
+}
+/* .bigCol{
+    background-color: brown;
+} */
+.headRow{
+    height: 7%;
+    /* background-color: rgb(255, 255, 255); */
+}
+.logo{
+    width:70px;
+     height:70px;
+     margin-left: 50px;
+     margin-top: 2px;
+}
+.searchbar{
+    position: relative;
+    left: 60%;
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 60px;
+    background-color: #c3e2dd;
+    border-radius: 30px;
+    padding: 10px;
+    
+    }
+
+    .search_input{
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color:transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+    }
+
+    .search_input{
+    padding: 0 10px;
+    width: 450px;
+    caret-color:red;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_icon{
+    background: white;
+    color: #e74c3c;
+    }
+
+    .search_icon{
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:white;
+    text-decoration:none;
+    }
+.bodyRow{
+    height: 93%;
+    background-color: rgb(227, 255, 127);
+}
+.artist_albumCol{
+    background-color: #fcbcba;
+}
+.artistRow{
+    /* height: 30%; */
+    background-color: #c3e2dd;
+    /* background-image: linear-gradient(#fcbcba, #c4e4df); */
+}
+.artist{
+     margin-left: 10px;
+     margin-top: 10px;
+     width: 100%;
+}
+#artist_img{
+     width:150px;
+     height:150px;
+}
+td{
+    padding-left: 4px;
+}
+.albumsRow{
+    background-color: #FFCDC9;
+    /* background-image: linear-gradient( #c4e4df,#fcbcba); */
+    overflow-y: auto;
+}
+.songsCol{
+    background-image:url(src/trackbg.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #698DB3;
+    /* border-radius: 5px; */
+}
+.others_artist_Col{
+    background-color:#fcbcba ;
+    background-image: linear-gradient(#fcbcba, #c4e4df);
+    border: #fcbcba;
+    box-shadow: #fcbcba;
+}
+.Tracklist{
+    width: 100%;
+    margin-bottom: 6px;
+}
+.Tracklist {
+    width: 100%;
+    margin-bottom: 6px;
+}

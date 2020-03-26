@@ -2,9 +2,30 @@
     font-family: circular;
     /* color:#698DB3; */
 }
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #c4e4df; 
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
+h2+h3{
+    color: dodgerblue;
+
+    
+}
 .main_div{
-    height: 969px;
-    overflow: hidden;
+    height: 969px!important;
+    overflow: -moz-hidden-unscrollable;
 }
 .bigRow{
     height: 100%;
@@ -15,28 +36,34 @@
 } */
 .headRow{
     height: 7%;
+    background-image: radial-gradient(circle, rgb(86, 74, 71), #c4e4df, #c4e4df);
+    /* background-image: linear-gradient(to right, #c4e4df ,#fcbcba ); */
     /* background-color: rgb(255, 255, 255); */
 }
 .logo{
-    width:70px;
+     width:70px;
      height:70px;
      margin-left: 50px;
      margin-top: 2px;
 }
+
+
 .searchbar{
     position: relative;
-    left: 25%;
     margin-bottom: auto;
     margin-top: auto;
+    width: fit-content;
     height: 60px;
-    background-color: #c3e2dd;
+    background-color: whitesmoke;
     border-radius: 30px;
     padding: 10px;
+    border-color: #fcbcba;
+    border-style: ridge;
     
     }
 
     .search_input{
-    color: white;
+    color: rgb(0, 0, 0);
     border: 0;
     outline: 0;
     background: none;
@@ -48,7 +75,7 @@
 
     .search_input{
     padding: 0 10px;
-    width: 450px;
+    width: 320px;
     caret-color:red;
     transition: width 0.4s linear;
     }
@@ -71,14 +98,14 @@
     }
 .bodyRow{
     height: 93%;
-    background-color: rgb(227, 255, 127);
 }
 .artist_albumCol{
     background-color: #fcbcba;
     background-image: linear-gradient(to right, #c4e4df ,#fcbcba );
+    height: 897px ;
 }
 .artistRow{
-    height: 30%;
+    height: 25%;
     background-color: #c3e2dd;
     background-image: linear-gradient(to right, #c4e4df ,#fcbcba );
     /* background-image: linear-gradient(#fcbcba, #c4e4df); */
@@ -99,13 +126,18 @@ td{
     background-color: #FFCDC9;
     background-image: linear-gradient(to right, #c4e4df ,#fcbcba );
     /* background-image: linear-gradient( #c4e4df,#fcbcba); */
-    overflow-y: auto;
+    height: 75%;
+    overflow-y: scroll;
+    scroll-behavior: auto;
 }
 .songsCol{
     background-image:url(src/trackbg.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-color: #698DB3;
+     /* Full height */
+  height: 100%; 
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
     /* border-radius: 5px; */
 }
 .others_artist_Col{
@@ -113,12 +145,51 @@ td{
     background-image: linear-gradient(to right, #c4e4df ,#fcbcba );
     border: #fcbcba;
     box-shadow: #fcbcba;
+    height: 100%;
+    overflow-y: scroll;
+
+}
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 7.6%;
 }
 .Tracklist{
     width: 100%;
     margin-bottom: 6px;
 }
-.Tracklist {
-    width: 100%;
-    margin-bottom: 6px;
-}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .main_div{
+        height: fit-content;
+        /* overflow:scroll; */
+    }
+    #artist_img {
+        width: 100px;
+        height: 100px;
+    }
+    .artistRow{
+        height: fit-content;
+    }
+    .search_input{
+        width: fit-content;
+        height: fit-content;
+        left: 0%;
+        }
+        .logo{
+            position: relative;
+            left: 90px;
+
+        }
+        .headRow{
+            height: 70px;
+            width: fit-content;
+        }
+        #select{
+            width: fit-content;
+            left: 50%;
+
+        }
+
+  }

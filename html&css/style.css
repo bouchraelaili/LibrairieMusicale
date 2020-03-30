@@ -20,8 +20,6 @@
   }
 h2+h3{
     color: dodgerblue;
-
-    
 }
 .main_div{
     height: 969px!important;
@@ -29,7 +27,7 @@ h2+h3{
 }
 .bigRow{
     height: 100%;
-    /* background-color: crimson; */
+    
 }
 /* .bigCol{
     background-color: brown;
@@ -37,8 +35,6 @@ h2+h3{
 .headRow{
     height: 7%;
     background-image: radial-gradient(circle, rgb(86, 74, 71), #c4e4df, #c4e4df);
-    /* background-image: linear-gradient(to right, #c4e4df ,#fcbcba ); */
-    /* background-color: rgb(255, 255, 255); */
 }
 .logo{
      width:70px;
@@ -108,7 +104,7 @@ h2+h3{
     height: 25%;
     background-color: #c3e2dd;
     background-image: linear-gradient(to right, #c4e4df ,#fcbcba );
-    /* background-image: linear-gradient(#fcbcba, #c4e4df); */
+    
 }
 .artist{
      margin-left: 10px;
@@ -125,20 +121,18 @@ td{
 .albumsRow{
     background-color: #FFCDC9;
     background-image: linear-gradient(to right, #c4e4df ,#fcbcba );
-    /* background-image: linear-gradient( #c4e4df,#fcbcba); */
     height: 75%;
     overflow-y: scroll;
     scroll-behavior: auto;
+    
 }
 .songsCol{
     background-image:url(src/trackbg.jpg);
-     /* Full height */
   height: 100%; 
-  /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-    /* border-radius: 5px; */
+    border-radius: 5px;
 }
 .others_artist_Col{
     background-color:#fcbcba ;
@@ -157,6 +151,18 @@ td{
 .Tracklist{
     width: 100%;
     margin-bottom: 6px;
+}
+.add{
+        height:40px; 
+        width:150px; 
+        /* margin: -20px -50px;  */
+        position:relative;
+        left:42%;
+        border-radius: 9px;
+        background-color: #698DB3;
+        border-color: #698DB3;
+        color: whitesmoke;
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -177,9 +183,10 @@ td{
         height: fit-content;
         left: 0%;
         }
-        .logo{
+        span{
             position: relative;
             left: 90px;
+            color: #c3e2dd;
 
         }
         .headRow{
